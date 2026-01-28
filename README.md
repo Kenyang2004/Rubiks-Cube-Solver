@@ -31,10 +31,18 @@ Initially, a sticker-based representation was implemented, but updating 54 facel
     Same concept as H2 but for edges using EDGE_POS
     Sum distances, divide by 4
 
+## Current Limitations
+
+- Currently solves 14 of 40 test cases
+- Solver is optimized for moderate scrambles; very complex scrambles may exceed time constraints
+
+
 - ## Future Improvements
 
 - Pattern Database (PDB) heuristics
 - Two-phase solving approach
 - Additional pruning rules
+
+
 
 
