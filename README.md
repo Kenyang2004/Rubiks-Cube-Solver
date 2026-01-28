@@ -20,8 +20,16 @@ Initially, a sticker-based representation was implemented, but updating 54 facel
 ## Heuristics
 
 - Cubie misplacement and misorientation heuristic (admissible)
+    1 = (misplaced corners + misoriented corners + misplaced edges + misoriented edges) / 4
+  
 - Corner Manhattan distance heuristic
+    Each corner has a 3D coordinate in the solved cube (from CORNER_POS)
+    Computes Manhattan distance between current and goal positions for each corner
+    Sum all distances, divide by 4 (quarter-turn metric)
+  
 - Edge Manhattan distance heuristic
+    Same concept as H2 but for edges using EDGE_POS
+    Sum distances, divide by 4
 
 - ## Future Improvements
 
